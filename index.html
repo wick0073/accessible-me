@@ -19,56 +19,81 @@
     <header class="site-header" role="banner">
 
       <h1>Jam Box Studios</h1>
+
+      <!-- adds navigation role -->
       <nav class="main-nav" role="navigation">
-        
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
-      <h1>Welcome to Jam Box</h1>
+      </nav>
+
+      <!-- adds alt -->
+      <img src="https://placekitten.com/1200/900" class="banner" alt="cat_image">
+    </header>
+
+    <!-- changed div to main  - fixed -->
+    <main class="main-content" role="main">
+      <!-- changed h1 to h2 -->
+      <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+      
+      <!-- changed the div to a section -->
+      <section role="region" class="owner" >
+        <!-- changed h1 to h2 -->
+        <h2>Meet the owner</h2>
+
+        <!-- adds role list and itemtype -->
+        <ul itemtype="https://schema.org/Person"  role="list" >
+          <!-- adds itemprops -->
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="job_title">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
+
+        <!-- changed h1 to h2 -->
+        <h2>Address</h2>
         <p>
           Jambox Studios
           123 Guitar Road,
           Musicville, Danceistan
           B3T 0L0
         </p>
-      </div>
+      </section>
 
       <!-- adds role and link to go to contact -->
       <div class="contact-section" role="form" id="Go_to_contact" >
-        <h1>Contact Us</h1>
+
+        <!-- changed h1 to h2 -->
+        <h2>Contact Us</h2>
         <form action="thanks.html">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
+
+          <!-- adds label to email -->
+          <label>Email</label>
           <input type="text" placeholder="Email">
+
+          <!-- adds label to Subject -->
+          <label>Subject</label>
           <input type="text" placeholder="Subject">
-          <b>Your Message</b>
+          
+          <!-- adds a label to message -->
+          <label>Your Message</label>
           <textarea></textarea>
+          
           <button type="submit">Send</button>
         </form>
       </div>
-    </div>
-    <div class="site-footer">
-      &copy; 2021 Jam Box Studios
-    </div>
+    </main>
+    <!-- fixed footer section -->
+    <footer role="contentinfo" class="site-footer">
+      &copy; 2023 Jam Box Studios
+    </footer>
   </div>
 </body>
-
 </html>
