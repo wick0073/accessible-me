@@ -32,6 +32,7 @@ img {
   margin: 0;
   padding: 0;
 }
+
 p,
 li 
 {
@@ -41,30 +42,26 @@ li
 }
 .Go_to_contact:focus {
   cursor: pointer;
-  font-size: 1.75rem;
-  padding: 1.75rem;
+
   
 }
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  border: 1px solid gray;
 }
 
 .main-nav ul li a {
   display: block;
   color: inherit;
   text-decoration: none;
-  font-size: 1.75rem;
 }
 form label {
   font-size: 1.75rem;
 }
 .main-nav ul li a:hover {
   cursor: pointer;
-
-  font-size: 1.75rem;
-  padding: 1.75rem;
- 
+  background-color: bisque;
 }
 h2 
 {
@@ -73,8 +70,9 @@ h2
 
 .Go_to_contact:hover {
   cursor: pointer;
-  font-size: 1.75rem;
-  padding: 1.75rem;
+  background-color: bisque;
+  border: 1px solid #000;
+ 
 
 }
 h1 
@@ -99,9 +97,9 @@ form textarea {
   resize: none;
 }
 .main-nav ul li a:focus {
-  font-size: 1.75rem;
-  padding: 1.75rem;
+
   cursor: pointer;
+  background-color: burlywood;
   
 }
 form button {
